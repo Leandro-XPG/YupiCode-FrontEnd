@@ -15,15 +15,15 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll",policy =>
     {
-        policy.AllowAnyOrigin()
+        policy.WithOrigins("https://leandro-xpg.github.io/YupiCode/")
                 .AllowAnyHeader()
                 .AllowAnyMethod();
     });
 });
 var app = builder.Build();
 
-app.UseHttpsRedirection();
 app.UseCors("AllowAll");
+app.UseHttpsRedirection();
 app.MapControllers();
 app.Run();
 
