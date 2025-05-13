@@ -13,7 +13,7 @@ builder.Services.AddControllers();
 
 builder.Services.AddCors(options =>
 {
-    options.AddDefaultPolicy(policy =>
+    options.AddPolicy("AllowAll",policy =>
     {
         policy.AllowAnyOrigin()
                 .AllowAnyHeader()
@@ -23,7 +23,7 @@ builder.Services.AddCors(options =>
 var app = builder.Build();
 
 app.UseHttpsRedirection();
-app.UseCors();
+app.UseCors("AllowAll");
 app.MapControllers();
 app.Run();
 

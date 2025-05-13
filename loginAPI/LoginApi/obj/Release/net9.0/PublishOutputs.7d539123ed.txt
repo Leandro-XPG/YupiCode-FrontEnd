@@ -1,0 +1,14 @@
+C:\Users\Kabum\Documents\Repositórios\landing\loginAPI\LoginApi\bin\Release\net9.0\publish\LoginApi.exe
+C:\Users\Kabum\Documents\Repositórios\landing\loginAPI\LoginApi\bin\Release\net9.0\publish\appsettings.Development.json
+C:\Users\Kabum\Documents\Repositórios\landing\loginAPI\LoginApi\bin\Release\net9.0\publish\appsettings.json
+C:\Users\Kabum\Documents\Repositórios\landing\loginAPI\LoginApi\bin\Release\net9.0\publish\LoginApi.dll
+C:\Users\Kabum\Documents\Repositórios\landing\loginAPI\LoginApi\bin\Release\net9.0\publish\LoginApi.deps.json
+C:\Users\Kabum\Documents\Repositórios\landing\loginAPI\LoginApi\bin\Release\net9.0\publish\LoginApi.runtimeconfig.json
+C:\Users\Kabum\Documents\Repositórios\landing\loginAPI\LoginApi\bin\Release\net9.0\publish\LoginApi.pdb
+C:\Users\Kabum\Documents\Repositórios\landing\loginAPI\LoginApi\bin\Release\net9.0\publish\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\Kabum\Documents\Repositórios\landing\loginAPI\LoginApi\bin\Release\net9.0\publish\Microsoft.EntityFrameworkCore.dll
+C:\Users\Kabum\Documents\Repositórios\landing\loginAPI\LoginApi\bin\Release\net9.0\publish\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Kabum\Documents\Repositórios\landing\loginAPI\LoginApi\bin\Release\net9.0\publish\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Kabum\Documents\Repositórios\landing\loginAPI\LoginApi\bin\Release\net9.0\publish\Microsoft.OpenApi.dll
+C:\Users\Kabum\Documents\Repositórios\landing\loginAPI\LoginApi\bin\Release\net9.0\publish\MySqlConnector.dll
+C:\Users\Kabum\Documents\Repositórios\landing\loginAPI\LoginApi\bin\Release\net9.0\publish\Pomelo.EntityFrameworkCore.MySql.dll
