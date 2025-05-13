@@ -162,19 +162,32 @@ border: 2px solid var(--color1);
     }#senha{
         left: 5%;
         top: 30%;
-    }.google-login{
-        left: -140px;
-        top: 170px;
-    }.git-login{
-        top: 145px;
-        left: 90px;
-    }.discord-login{
-        left:77px;
-        top:145px;
-    }.voltar{
-        left:-5px;
-        top: 190px;
-    }  
+    }.hero :is(.google-login,.discord-login,.git-login){
+        display: none;
+    }
+        
+    
 
+    .registrar{
+    position: absolute;
+    left: -45px;
+    bottom: 2px;
+    font-size: 12px;
+    background-color: transparent;
+    color: var(--color5);
+    cursor: pointer;
+}
 
+.registrar-button{
+    position: absolute;
+    box-shadow: 0 2px 8px rgba(128, 128, 128, 0.300);
+    width: 60px;
+    height: 20px;
+    bottom: 76px;
+    left: 70px;
+    border-radius: 10px;
+    transition: .3s ease;
+}.registrar-button:hover{
+   box-shadow: 0 2px 8px var(--color5);
+}
 }
