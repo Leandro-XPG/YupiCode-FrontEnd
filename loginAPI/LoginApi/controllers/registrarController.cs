@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 namespace LoginApi.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("[api/registrar]")]
     public class RegistrarController : ControllerBase
     {
 

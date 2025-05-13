@@ -13,7 +13,7 @@ async function registrar(event) {
     };
 
     try{
-        const resposta = await fetch('https://yupicode-f2nk2re5t-leandro-xpgs-projects.vercel.app/registrar',{
+        const resposta = await fetch('https://yupicode-f2nk2re5t-leandro-xpgs-projects.vercel.app/api/registrar',{
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
