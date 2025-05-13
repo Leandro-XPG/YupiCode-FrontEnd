@@ -190,4 +190,8 @@ border: 2px solid var(--color1);
 }.registrar-button:hover{
    box-shadow: 0 2px 8px var(--color5);
 }
+.voltar{
+    top: 220px;
+    left: -85px;
+}
 }
