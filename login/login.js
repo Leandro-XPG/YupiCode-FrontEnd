@@ -6,7 +6,7 @@ async function registrar(event) {
 
     const dados = {
         nome: nome,
-        senha: senha,
+        senha: senha
     };
 
     try{
