@@ -10,7 +10,7 @@ async function registrar(event) {
     };
 
     try{
-        const resposta = await fetch('https://yupicode-backend.onrender.com',{
+        const resposta = await fetch('https://yupicode-backend.onrender.com/usuarios',{
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
