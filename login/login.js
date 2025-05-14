@@ -7,13 +7,11 @@ async function registrar(event) {
 
     const dados = {
         nome: nome,
-        email: email,
         senha: senha,
-        nivel: "Iniciante"
     };
 
     try{
-        const resposta = await fetch('https://yupicode-f2nk2re5t-leandro-xpgs-projects.vercel.app/api/registrar',{
+        const resposta = await fetch('',{
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
