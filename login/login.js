@@ -15,8 +15,10 @@ async function registrar(event) {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(dados)
+            body: JSON.stringify(dados),
+            mode:'cors'
         });
+
 
         if(resposta.ok){
             alert('Registro completo!');
