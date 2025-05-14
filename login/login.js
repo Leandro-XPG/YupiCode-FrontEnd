@@ -2,7 +2,6 @@ async function registrar(event) {
     event.preventDefault();
 
     const nome = document.getElementById('usuario').value;
-    const email = document.getElementById('email').value;
     const senha = document.getElementById('senha').value;
 
     const dados = {
