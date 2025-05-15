@@ -36,6 +36,12 @@ html{
     margin: 150px auto;
 }
 
+#botao-iniciar{
+    position: absolute;
+    left: 300px;
+    top: 300px;
+}
+
 /*MODO CLARO*/
 body.light-mode{
     background-image: none;

@@ -2,6 +2,26 @@ const limiteDiario = 5;
 let perguntasHoje = [];
 let indiceAtual = 0;
 
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('botao-iniciar').addEventListener('click', () => {
+  document.getElementById('botao-iniciar').style.display = "none";
+  document.getElementById('quiz-container').style.display = "block";
+  carregarPerguntas();
+
+
+
+});
+  document.getElementById('proxima').addEventListener('click',() =>{
+    indiceAtual++;
+    const progresso = JSON.parse(localStorage.getItem('quizDiario'));
+    progresso.respondidas = indiceAtual;
+    localStorage.setItem('quizDiario', JSON.stringify(progresso));
+    mostrarPergunta();
+  });
+});
+
+
+
 async function carregarPerguntas(){
   const resposta = await fetch('yupiQuiz.json');
   const todas = await resposta.json();
@@ -11,8 +31,8 @@ async function carregarPerguntas(){
 
   if (progresso.data !== hoje){
     const sorteadas = [];
-    while (sorteadas.lenght < limiteDiario){
-      const rand = todas[Math.floor(Math.random() * todas.lenght)];
+    while (sorteadas.length < limiteDiario){
+      const rand = todas[Math.floor(Math.random() * todas.length)];
       if (!sorteadas.find(p => p.pergunta === rand.pergunta)){
         sorteadas.push(rand);
       }
@@ -50,7 +70,7 @@ function mostrarPergunta(){
     html += `<li><button onclick = 'responder(${i})'>${op}</button></li>`;
   });
 
-  html += '</ul><div> id="feedback"></div>';
+  html += '</ul><div id="feedback"></div>';
   container.innerHTML = html;
   botaoProxima.style.display = 'none';
 };
@@ -67,16 +87,10 @@ function responder(i){
     feedback.style.color = 'red';
   }
 
-  document.querySelectorAll('#quiz-container button').forEach(b => b.disabled - true);
+  document.querySelectorAll('#quiz-container button').forEach(b => b.disabled = true);
   document.getElementById('proxima').style.display = 'inline'
 }
 
-document.getElementById('proxima').addEventListener('click',() =>{
-  indiceAtual++;
-  const progresso = JSON.parse(localStorage.getItem('quizDiario'));
-  progresso.respondidas = indiceAtual;
-  localStorage.setItem('quizDiario', JSON.stringify(progresso));
-  mostrarPergunta();
-});
 
-carregarPerguntas();
+
+
