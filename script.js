@@ -21,11 +21,16 @@ interruptor.addEventListener('click',()=>{
 
 const menu = document.querySelector('.btn-menu');
 const menuMobile = document.querySelector('.menu-aberto');
+const sair = document.querySelector('.btn-sair')
 
 menu.addEventListener('click',(e)=>{
   e.stopPropagation();
   document.body.classList.toggle('mobile-aberto')
+ 
 });
+sair.addEventListener('click',()=>{
+   document.body.classList.remove('mobile-aberto')
+})
 
 document.addEventListener('click',(e)=>{
   const isCLickMenu = menu.contains(e.target) || e.target.closest('.menu')
@@ -38,6 +43,6 @@ document.addEventListener('click',(e)=>{
 const logica = document.querySelector('.logica');
 
 logica.addEventListener('click',()=>{
-    window.location.href = 'Youtgame/yout_game.html';
+    window.location.href = 'YoutGame/yout_game.html';
 })
 
