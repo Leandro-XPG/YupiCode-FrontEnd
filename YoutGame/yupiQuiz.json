@@ -10,7 +10,7 @@
     "respostaCorreta": 1
   },
   {
-    "pergunta": "Qual a função da tag <title> no HTML? (Pergunta 2)",
+    "pergunta": "Qual a função da tag <.title> no HTML? (Pergunta 2)",
     "opcoes": [
       "Define o título da página mostrado na aba do navegador",
       "Cria um título visível no corpo da página",
@@ -109,16 +109,7 @@
     ],
     "respostaCorreta": 1
   },
-  {
-    "pergunta": "Qual a função da tag <title> no HTML? (Pergunta 12)",
-    "opcoes": [
-      "Define o título da página mostrado na aba do navegador",
-      "Cria um título visível no corpo da página",
-      "Insere um título para impressão",
-      "Define o título do formulário"
-    ],
-    "respostaCorreta": 0
-  },
+  
   {
     "pergunta": "Qual propriedade CSS altera a cor do texto? (Pergunta 13)",
     "opcoes": [
@@ -209,26 +200,7 @@
     ],
     "respostaCorreta": 1
   },
-  {
-    "pergunta": "Qual a função da tag <title> no HTML? (Pergunta 22)",
-    "opcoes": [
-      "Define o título da página mostrado na aba do navegador",
-      "Cria um título visível no corpo da página",
-      "Insere um título para impressão",
-      "Define o título do formulário"
-    ],
-    "respostaCorreta": 0
-  },
-  {
-    "pergunta": "Qual propriedade CSS altera a cor do texto? (Pergunta 23)",
-    "opcoes": [
-      "background-color",
-      "font-size",
-      "color",
-      "text-align"
-    ],
-    "respostaCorreta": 2
-  },
+  
   {
     "pergunta": "Como declarar uma variável em JavaScript? (Pergunta 24)",
     "opcoes": [
@@ -308,16 +280,6 @@
       "<url>"
     ],
     "respostaCorreta": 1
-  },
-  {
-    "pergunta": "Qual a função da tag <title> no HTML? (Pergunta 32)",
-    "opcoes": [
-      "Define o título da página mostrado na aba do navegador",
-      "Cria um título visível no corpo da página",
-      "Insere um título para impressão",
-      "Define o título do formulário"
-    ],
-    "respostaCorreta": 0
   },
   {
     "pergunta": "Qual propriedade CSS altera a cor do texto? (Pergunta 33)",
@@ -410,16 +372,6 @@
     "respostaCorreta": 1
   },
   {
-    "pergunta": "Qual a função da tag <title> no HTML? (Pergunta 42)",
-    "opcoes": [
-      "Define o título da página mostrado na aba do navegador",
-      "Cria um título visível no corpo da página",
-      "Insere um título para impressão",
-      "Define o título do formulário"
-    ],
-    "respostaCorreta": 0
-  },
-  {
     "pergunta": "Qual propriedade CSS altera a cor do texto? (Pergunta 43)",
     "opcoes": [
       "background-color",
@@ -508,16 +460,6 @@
       "<url>"
     ],
     "respostaCorreta": 1
-  },
-  {
-    "pergunta": "Qual a função da tag <title> no HTML? (Pergunta 52)",
-    "opcoes": [
-      "Define o título da página mostrado na aba do navegador",
-      "Cria um título visível no corpo da página",
-      "Insere um título para impressão",
-      "Define o título do formulário"
-    ],
-    "respostaCorreta": 0
   },
   {
     "pergunta": "Qual propriedade CSS altera a cor do texto? (Pergunta 53)",
@@ -610,16 +552,6 @@
     "respostaCorreta": 1
   },
   {
-    "pergunta": "Qual a função da tag <title> no HTML? (Pergunta 62)",
-    "opcoes": [
-      "Define o título da página mostrado na aba do navegador",
-      "Cria um título visível no corpo da página",
-      "Insere um título para impressão",
-      "Define o título do formulário"
-    ],
-    "respostaCorreta": 0
-  },
-  {
     "pergunta": "Qual propriedade CSS altera a cor do texto? (Pergunta 63)",
     "opcoes": [
       "background-color",
@@ -709,16 +641,7 @@
     ],
     "respostaCorreta": 1
   },
-  {
-    "pergunta": "Qual a função da tag <title> no HTML? (Pergunta 72)",
-    "opcoes": [
-      "Define o título da página mostrado na aba do navegador",
-      "Cria um título visível no corpo da página",
-      "Insere um título para impressão",
-      "Define o título do formulário"
-    ],
-    "respostaCorreta": 0
-  },
+
   {
     "pergunta": "Qual propriedade CSS altera a cor do texto? (Pergunta 73)",
     "opcoes": [
@@ -810,16 +733,6 @@
     "respostaCorreta": 1
   },
   {
-    "pergunta": "Qual a função da tag <title> no HTML? (Pergunta 82)",
-    "opcoes": [
-      "Define o título da página mostrado na aba do navegador",
-      "Cria um título visível no corpo da página",
-      "Insere um título para impressão",
-      "Define o título do formulário"
-    ],
-    "respostaCorreta": 0
-  },
-  {
     "pergunta": "Qual propriedade CSS altera a cor do texto? (Pergunta 83)",
     "opcoes": [
       "background-color",
@@ -909,16 +822,7 @@
     ],
     "respostaCorreta": 1
   },
-  {
-    "pergunta": "Qual a função da tag <title> no HTML? (Pergunta 92)",
-    "opcoes": [
-      "Define o título da página mostrado na aba do navegador",
-      "Cria um título visível no corpo da página",
-      "Insere um título para impressão",
-      "Define o título do formulário"
-    ],
-    "respostaCorreta": 0
-  },
+  
   {
     "pergunta": "Qual propriedade CSS altera a cor do texto? (Pergunta 93)",
     "opcoes": [
