@@ -25,9 +25,8 @@
 
 .menu .logo{
     position: absolute;
-    top: -20px;
-    left: 10px;
-    width: 300px;
+    top: -90px;
+    width: 250px;
 }.yupi{
     position: absolute;
     top: 0px;
@@ -112,7 +111,8 @@ body.light-mode .menu ul li a{
     }
 
     .menu .logo{
-        left: 150px;
+        left: 50%;
+        transform: translate(-50%);
     }.yupi{
         left: 140px;
     }

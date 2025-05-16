@@ -35,5 +35,9 @@ document.addEventListener('click',(e)=>{
   }
 });
 
+const logica = document.querySelector('.logica');
 
+logica.addEventListener('click',()=>{
+    window.location.href = 'Youtgame/yout_game.html';
+})
 
