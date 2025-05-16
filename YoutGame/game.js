@@ -31,14 +31,15 @@ async function carregarPerguntas(){
 
   if (progresso.data !== hoje){
     const sorteadas = [];
-    while (sorteadas.length < limiteDiario){
-      const rand = todas[Math.floor(Math.random() * todas.length)];
-      if (!sorteadas.find(p => p.pergunta === rand.pergunta)){
-        sorteadas.push(rand);
-      }
+
+    const indicesSorteados = new Set();
+
+    while (indicesSorteados.size < limiteDiario){
+      const randIndex = Math.floor(Math.random() * todas.length);
+      indicesSorteados.add(randIndex);
     }
 
-    perguntasHoje = sorteadas;
+    perguntasHoje = Array.from(indicesSorteados).map(i => todas[i])
     localStorage.setItem('quizDiario', JSON.stringify({
       data: hoje,
       respondidas: 0,
@@ -64,10 +65,18 @@ function mostrarPergunta(){
   }
 
   const p = perguntasHoje[indiceAtual];
-  let html = `<h3>${p.pergunta}</h3>`
+  let html = `<h3>${p.pergunta}</h3><ul>`
 
   p.opcoes.forEach((op,i) =>{
-    html += `<li><button onclick = 'responder(${i})'>${op}</button></li>`;
+
+    const opcaoSegura = op
+    .replace(/'/g, "&lt;")
+    .replace(/"/g, "&qgt;")
+    .replace(/</g, "&#39;")
+    .replace(/>/g, "&quot;");
+
+
+    html += `<li><button onclick = "responder(${i})">${opcaoSegura}</button></li>`;
   });
 
   html += '</ul><div id="feedback"></div>';
@@ -82,13 +91,20 @@ function responder(i){
   if(i == p.respostaCorreta){
     feedback.textContent = 'Parabéns, você acertou!!!';
     feedback.style.color = 'green';
+    feedback.style.fontFamily = 'Galindo'
   }else{
     feedback.textContent = 'Resposta errada!'
     feedback.style.color = 'red';
+    feedback.style.fontFamily = 'Galindo'
   }
 
   document.querySelectorAll('#quiz-container button').forEach(b => b.disabled = true);
   document.getElementById('proxima').style.display = 'inline'
+}
+
+function reiniciarQuiz() {
+  localStorage.removeItem('quizDiario');
+  location.reload(); // recarrega a página
 }
 
 

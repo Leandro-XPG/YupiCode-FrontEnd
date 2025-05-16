@@ -184,7 +184,7 @@
     "opcoes": [
       "// comentário",
       "/* comentário */",
-      "<!-- comentário -->",
+      "<!- comentário ->",
       "# comentário"
     ],
     "respostaCorreta": 1

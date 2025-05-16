@@ -36,12 +36,4 @@ document.addEventListener('click',(e)=>{
 });
 
 
-const filtro = document.querySelector('.filtro-mobile')
-
-filtro.addEventListener('click',()=>{
-
-  document.body.classList.toggle('filtro-aberto');
-
-});
-
 
