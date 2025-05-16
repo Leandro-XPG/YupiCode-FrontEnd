@@ -178,7 +178,7 @@ body.light-mode .hero :is(.front,.back,.game){
         transform: translate(-50%);
     }
     .quiz-container h3{
-        font-size: 36px;
+        font-size: 16px;
         width: 250px;
     }.quiz-container h2{
         font-family: 'Galindo';
