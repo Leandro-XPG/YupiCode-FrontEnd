@@ -102,7 +102,10 @@ function responder(i){
   document.getElementById('proxima').style.display = 'inline'
 }
 
- 
+ function reiniciarQuiz() {
+  localStorage.removeItem('quizDiario');
+  location.reload(); // recarrega a página
+}
 
 
 
