@@ -221,7 +221,7 @@ body.light-mode .texto-mobile{
     color: var(--color6);
 
 }body.light-mode .card{
-    box-shadow: 2px 5px 5px rgba(128, 128, 128, 0.200);
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
 }body.light-mode .mobile h2{
     color: black;
 }
