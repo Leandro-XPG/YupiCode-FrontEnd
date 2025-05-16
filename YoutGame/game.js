@@ -59,7 +59,7 @@ function mostrarPergunta(){
   const botaoProxima = document.getElementById('proxima');
 
   if(indiceAtual >= perguntasHoje.length){
-    container.innerHTML = "<h3>Você ja respondeu as 5 perguntas de hoje!</h3>"
+    container.innerHTML = "<h2>Você ja respondeu as 5 perguntas de hoje!</h2>"
     botaoProxima.style.display = "none";
     return;
   }
@@ -102,10 +102,7 @@ function responder(i){
   document.getElementById('proxima').style.display = 'inline'
 }
 
-function reiniciarQuiz() {
-  localStorage.removeItem('quizDiario');
-  location.reload(); // recarrega a página
-}
+ 
 
 
 

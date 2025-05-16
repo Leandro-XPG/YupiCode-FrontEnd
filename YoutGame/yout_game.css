@@ -25,16 +25,7 @@ html{
     overflow: hidden;
 }
 
-.hidden{
-    display: none !important;
-}
 
-.hero{
-    max-width: 1400px;
-    height: 70%;
-    box-shadow:0 2px 8px rgba(255, 255, 255, 0.200);
-    margin: 150px auto;
-}
 
 #botao-iniciar{
     position: absolute;
@@ -49,6 +40,7 @@ html{
     color: var(--color5);
     transition: .3s ease;
     z-index: 99999;
+    font-size: 36px;
 }#botao-iniciar:hover{
     box-shadow: 0 2px 8px var(--color4);
 }#reiniciar{
@@ -78,7 +70,7 @@ html{
     position: relative;
     place-items: center;
 }.quiz-container h3{
-    color: var(--color6);
+    color: var(--color5);
     position: absolute;
     left: 50%;
     transform: translate(-50%);
@@ -123,14 +115,11 @@ html{
     box-shadow: 0 2px 8px var(--color4);
 }
 
-#feedback{
-    color: white;
-}
 
 /*MODO CLARO*/
 body.light-mode{
     background-image: none;
-    background-color: #d3e8fc;
+    background-color: #F3EBCC;
 }body.light-mode .dark{
     display: none;
 }body.light-mode .light{
@@ -168,6 +157,61 @@ body.light-mode .hero :is(.front,.back,.game){
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.200);
 }body.light-mode .hero :is(.front,.back,.game):hover{
     box-shadow: 0 2px 8px var(--color5);
+}
+
+
+
+@media screen and (max-width: 780px){
+    .quiz-container{
+        width: 300px;
+        height: 600px;
+    }
+
+    #botao-iniciar{
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 35px;
+    }#reiniciar{
+        padding: 4px;
+        bottom: 450px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .quiz-container h3{
+        font-size: 36px;
+        width: 250px;
+    }.quiz-container h2{
+        font-family: 'Galindo';
+        color: var(--color5);
+        font-size: 12px;
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+    }#proxima{
+        bottom: 60px;
+    }.quiz-container button:hover{
+        background-color: var(--color5);
+        color: var(--color1);
+    }
+
+
+
+
+    body.light-mode #botao-iniciar{
+        color: var(--color1);
+    }
+
+    body.light-mode .quiz-container h3{
+        color: var(--color2);
+    }body.light-mode .quiz-container button{
+        color: var(--color1);
+    }body.light-mode .quiz-container button:hover{
+        background-color: var(--color1);
+        color: var(--color5);
+    }body.light-mode #proxima{
+        color: var(--color1);
+    }
 }
 
 

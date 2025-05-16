@@ -246,7 +246,7 @@ body{
 /*MODO CLARO*/
 body.light-mode{
     background-image: none;
-    background-color: #d3e8fc;
+    background-color: #F3EBCC;
 }body.light-mode .dark{
     display: none;
 }body.light-mode .light{
