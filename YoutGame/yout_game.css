@@ -32,9 +32,9 @@ html{
 #botao-iniciar{
     position: absolute;
     left: 900px;
-    top: 350px;
+    top: 40%;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 20px 0 20px 0;
     cursor: pointer;
     background-color: transparent;
     border: none;
@@ -68,7 +68,7 @@ html{
     width: 60%;
     height: 80%;
     margin: 60px auto;
-    border-radius: 30px;
+    border-radius: 100px;
     position: relative;
     place-items: center;
 }.quiz-container h3{
