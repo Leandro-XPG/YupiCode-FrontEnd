@@ -91,6 +91,10 @@ body.light-mode .menu ul li a{
     color: var(--color5);
 }
 
+body.light-mode .interruptor{
+    box-shadow: 0 0 5px var(--color2);
+    color: var(--color1);
+}
 
 
 .menu-aberto{
