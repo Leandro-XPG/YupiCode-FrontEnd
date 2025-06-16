@@ -15,7 +15,7 @@
 }
 
 body{
-    background-image: linear-gradient(45deg,black,var(--color1));
+    background-color: black;
     height: 100vh;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -126,8 +126,7 @@ html{
 
 /*MODO CLARO*/
 body.light-mode{
-    background-image: none;
-    background-color: #F3EBCC;
+    background-color: white;
 }body.light-mode .dark{
     display: none;
 }body.light-mode .light{
