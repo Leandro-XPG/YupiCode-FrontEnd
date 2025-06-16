@@ -62,7 +62,7 @@ html{
 }
 
 .cursos-link{
-    color: white;
+    color: black;
     text-decoration: none;
     padding: 10px 30px;
     background-color: var(--color5);
@@ -79,8 +79,8 @@ html{
 
 
 .cursos-link:hover{
-    background-color: white;
-    color: var(--color4);
+    background-color: var(--color1);
+    color: white;
     border-radius: 0;
 }
 
@@ -123,7 +123,8 @@ body.light-mode .dark{
 body.light-mode .cursos-link{
     color: black;
 }body.light-mode .cursos-link:hover{
-    color: var(--color1);
+    background-color: var(--color1);
+    color:white;
 }
 
 
