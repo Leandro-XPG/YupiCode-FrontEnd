@@ -18,12 +18,9 @@ body{
     background-color: black;
     height: 100vh;
     background-repeat: no-repeat;
-    overflow: hidden;
 }
 
-html{
-    overflow: hidden;
-}
+
 
 
 
@@ -110,18 +107,106 @@ html{
 }
 
 
-.principal-img{
-    width: 800px;
-    height: 400px;
-    position: absolute;
-    right: 100px;
-    top: 170px;
-    border-radius: 20px;;
-}
 
 .mobile{
     display: none;
 }
+
+
+/*CARDS DE DETALHES*/
+
+.detalhes{
+    width: 70%;
+    height: 300px;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display:flex;
+    justify-content: space-around;
+}.detalhes .card{
+    width: 300px;
+    height: 200px;
+    box-shadow: 0 3px 8px rgba(255, 255, 255, 0.400);
+    border-radius: 20%;
+    transition: .3s ease;
+    position: relative;
+}.detalhes .card:hover{
+    box-shadow: 0 5px 8px var(--color5);
+}
+
+
+.card i,h1,p{
+    color: white;
+    font-family: 'Galindo',sans-serif;
+    position: absolute;
+    cursor: default;
+}.card i{
+    top: 20%;
+    right: 5%;
+    font-size: 24px;
+    color: var(--color1);
+}.card h1{
+    top: 20%;
+    left: 5%;
+}.card p{
+    top: 40%;
+    left: 5%;
+}
+
+
+/*FOOTER*/
+ footer{
+    width: 100%;
+    height: 250px;
+    background-color: var(--color4);
+    position: relative;
+ }
+
+footer .redes{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}footer .redes i{
+    font-size: 24px;
+    margin: 10px;
+    transition: .3s ease;
+    cursor: pointer;
+    color: white;
+    opacity: 40%;
+}footer .redes i:hover{
+    color: var(--color5);
+    opacity: 100%;
+}
+
+
+ footer .direitos{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 90%;
+    height: 30%;
+    border-top:2px solid rgba(255, 255, 255, 0.300);
+ }footer .direitos p{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    opacity: 40%;
+ }
+
+
+
+
+
+
+
+
+
+
 
 
 
