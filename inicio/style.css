@@ -44,6 +44,10 @@ html{
     font-weight: 400;
     font-style: normal;
     line-height: 60px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
 }
 .hero .titulo span{
     color: var(--color5);
@@ -51,12 +55,15 @@ html{
 
 .hero .texto{
     max-width: 650px;
-    margin-top: 20px;
+    margin-top: 160px;
     color: rgb(197, 197, 197);
     font-family: "Galindo", sans-serif;
     font-weight: 200;
     font-style: normal;
     font-size: 12px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
 }.hero .texto-mobile{
     display: none;
 }
@@ -66,10 +73,25 @@ html{
     text-decoration: none;
     padding: 10px 30px;
     background-color: var(--color5);
-    border-radius: 10px;
+    border-radius: 40px;
     position: relative;
-    top: 50px;
-    left:0;
+    top:30%;
+    left:40%;
+    transition: .3s ease;
+    font-family: "Galindo", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 12px;
+}.demo{
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: transparent;
+    border-radius: 40px;
+    border: 2px solid var(--color1);
+    position: relative;
+    top:30%;
+    left:40%;
     transition: .3s ease;
     font-family: "Galindo", sans-serif;
     font-weight: 200;
@@ -81,7 +103,10 @@ html{
 .cursos-link:hover{
     background-color: var(--color1);
     color: white;
-    border-radius: 0;
+}
+
+.demo:hover{
+    background-color: var(--color1);
 }
 
 

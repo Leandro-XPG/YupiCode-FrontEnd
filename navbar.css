@@ -22,23 +22,14 @@
     display: none;
 }
 
-.menu .logo{
-    position: absolute;
-    top: -90px;
-    width: 250px;
-}.yupi{
-    position: absolute;
-    top: 0px;
-}
-
 .menu ul{
     display: flex;
-    justify-content: center;
+    justify-content: end;
     margin-top: 30px;
 }
 
 .menu ul li{
-    margin: 0 50px;
+    margin: 0 20px;
     list-style: none;
 }
 
@@ -54,6 +45,38 @@
 .menu ul li a:hover{
     color: var(--color5);
 }
+
+.menu ul li button{
+    background-color: var(--color5);
+    padding: 3px 20px;
+    border-radius:20px;
+    margin-right: 30px;
+    cursor: pointer;
+    color:black;
+    font-family: 'Galindo',sans-serif;
+    margin-top: -5px;
+    transition: .3s ease;
+    border: none;
+}.menu ul li button:hover{
+    background-color: var(--color1);
+    color: white;
+}
+
+
+.logo img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 2.5%;
+    top: 1.5%;
+}.menu span{
+    color: var(--color5);
+    font-family: 'Galindo',sans-serif;
+    position: absolute;
+    left: 5%;
+    top: 2.7%;
+}
+
 
 .interruptor{
     width: 50px;
