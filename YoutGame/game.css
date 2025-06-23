@@ -179,3 +179,14 @@ header{
 }.responder:hover{
     transform: scale(1.2);
 }
+
+.voltar a{
+    color: white;
+    font-size: 36px;
+    position: absolute;
+    left: 5%;
+    top: 40%;
+    transition: .3s ease;
+}.voltar a:hover{
+    color: gray;
+}

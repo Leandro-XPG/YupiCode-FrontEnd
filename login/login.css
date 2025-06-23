@@ -64,14 +64,14 @@ body{
     cursor: pointer;
     position: absolute;
     top: 33%;
-    left: 15%;
+    left: -10%;
 }
 
 .login p{
     color: gray;
     position: absolute;
     top: 40%;
-    left:30%;
+    left:7%;
     font-size: 12px;
     font-family: 'Galindo',sans-serif;
 }.login a{
