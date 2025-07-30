@@ -9,13 +9,13 @@
     --color1:#4D01EB;
     --color2:#532BAB;
     --color3:#1D2634;
-    --color4:#44366B;
+    --color4:#04000E;
     --color5:#EBD700;
     --color6:#777935;
 }
 
 body{
-    background-image: linear-gradient(to bottom, var(--color1),black);
+    background-image: linear-gradient(to top,var(--color1),black);
     background-repeat: no-repeat;
 }
 
@@ -28,22 +28,23 @@ body{
 
 .hero{
     max-width: 1700px;
-    height: 100vh;
+    height: 90vh;
     margin: 100px auto;
+
 }
 
 .hero img{
-    width: 700px;
+    max-width: 700px;
     position: absolute;
     left: 50%;
-    top: 10%;
+    top: 20%;
     transform: translateX(-50%);
 }
 
 .cursos-link{
     color: black;
     text-decoration: none;
-    padding: 10px 30px;
+    padding: 1rem 2rem;
     background-color: var(--color5);
     border-radius: 40px;
     position: relative;
@@ -51,11 +52,11 @@ body{
     font-family: "Galindo", sans-serif;
     font-weight: 200;
     font-style: normal;
-    font-size: 12px;
+    font-size: 1rem;
 }.demo{
     color: white;
     text-decoration: none;
-    padding: 10px 30px;
+    padding: 1rem 2rem;
     background-color: transparent;
     border-radius: 40px;
     border: 2px solid var(--color1);
@@ -64,11 +65,11 @@ body{
     font-family: "Galindo", sans-serif;
     font-weight: 200;
     font-style: normal;
-    font-size: 12px;
+    font-size: 1rem;
 }.links{
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 60%;
     transform: translateX(-50%);
 }
 
@@ -91,13 +92,81 @@ body{
     display: none;
 }
 
+.ver-mais{
+    font-size: 4rem;
+    color: white;
+    position: absolute;
+    left: 50%;
+    bottom: 2%;
+    transform: translateX(-50%);
+    animation: verMais infinite .5s ease;
+}
+
+
+
+
+/*INFO*/
+.infos{
+    width: 100%;
+    height: 160vh;
+    background-color: white;
+    position: relative;
+}
+
+.infos .trilhas-example{
+    width: 700px;
+    height: 400px;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    border-left: 2rem solid var(--color1);
+    border-top: 2rem solid var(--color1);
+}.infos .trilhas-example img{
+    width: 110%;
+}.infos .trilhas-desc{
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    width: 600px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}.infos h1{
+    font-family: 'Galindo',sans-serif;
+    font-size: 2rem;
+    max-width: 450px;
+    color: var(--color1);
+}
+
+.infos .yupiGame-example{
+    width: 700px;
+    height: 400px;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    border-right: 2rem solid var(--color5);
+    border-bottom: 2rem solid var(--color5);
+}.infos .yupiGame-example img{
+    width: 100%;
+}.infos .yupiGame-desc{
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    width: 600px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 
 /*FOOTER*/
  footer{
     width: 100%;
     height: 250px;
-    background-color:rgba(0, 0, 0, 0.400);
+    background-color:var(--color4);
     position: relative;
  }
 
@@ -134,12 +203,21 @@ footer .redes{
     transform: translateX(-50%);
     font-size: 12px;
     opacity: 40%;
+    color: white;
  }
 
 
 
 
-
+@keyframes verMais {
+    0%{
+        bottom: 3%;
+    }50%{
+        bottom: 2%;
+    }100%{
+        bottom: 3%;
+    }
+}
 
 
 
@@ -191,100 +269,19 @@ body.light-mode .cursos-link{
 
 .hero{
     max-width: 100%;
-    padding: 0 10px;
+    padding: 0 .6rem;
 }
 
-.logo{
-    position: absolute;
+.hero img{
+max-width: 200px;
 }
-
-.hero .titulo{
-    font-size: 36px;
-    line-height: 40px;
-    max-width: 80%;
-    margin-left: 10%;
-}.hero .texto{
-    display: none;
-}
-.hero .texto-mobile{
-    font-size: 12px;
-    line-height: 20px;
-    max-width: 80%;
-    margin-left: 10%;
-    margin-top: 10px;
-    color: rgb(197, 197, 197);
-    font-family: "Galindo", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-    font-size: 12px;
-    display: block;
-}.cursos-link{
-    position: relative;
-    top: 25px;
-    left: 10%;
-    padding: 10px 15px;
-}
-
 .principal-img{
     display: none;
 }
-
-
-
-
-
-.mobile h2{
-    display: block;
-    margin: 0 10%;
-    font-family: 'Galindo';
+.links{
+    display: none;
 }
-.mobile .niveis{
-    width: 80%;
-    margin: 100px auto;
-    border-radius: 20px;
-    display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(100px,1fr));
-}.card{
-    display: flex;
-    margin: 5px 1px ;
-    background-color: var(--color4);
-    width: 100px;
-    height: 100px;
-    border-radius: 20px;
-    box-shadow: 2px 5px 5px rgba(255, 255, 255, 0.200);
-    justify-content: center;
-    align-items: center;
-}.icone-nivel{
-    color: black;
-    font-size: 32px;
-}.card:active{
-    background-color: black;
-    color: white;
-}.card:active > .icone-nivel{
-    color: white;
-}.mobile h2{
-    color: white;
-    position: relative;
-    top: 70px;
-    left: 75px;
-    font-size: 16px;
+footer{
+    height: 150px;
 }
-.logica{
-    background-color: var(--color5);
-}
-.basico, .advanced{
-    margin-left: 35%;
-}
-
-body.light-mode .texto-mobile{
-    color: var(--color6);
-
-}body.light-mode .card{
-    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
-}body.light-mode .mobile h2{
-    color: black;
-}
-
-
-
 }

@@ -9,7 +9,7 @@
     --color1:#4D01EB;
     --color2:#532BAB;
     --color3:#1D2634;
-    --color4:#44366B;
+    --color4:#04000E;
     --color5:#EBD700;
     --color6:#777935;
 }
@@ -76,7 +76,7 @@ body{
     font-family: 'Galindo',sans-serif;
 }.login a{
     position: absolute;
-    color: var(--color4);
+    color: var(--color2);
     text-decoration: none;
     font-family: 'Galindo',sans-serif;
     font-size: 12px;

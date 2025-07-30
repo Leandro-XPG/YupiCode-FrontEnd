@@ -12,7 +12,7 @@
     --color1:#4D01EB;
     --color2:#532BAB;
     --color3:#1D2634;
-    --color4:#44366B;
+    --color4:#04000E;
     --color5:#EBD700;
     --color6:#777935;
 }
@@ -23,14 +23,21 @@
     display: none;
 }
 
+.menu{
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
 .menu ul{
     display: flex;
-    justify-content: end;
-    margin-top: 30px;
+    justify-content: center;
+    background-color:#04000E;
+    padding: 2rem;
+    border-bottom: 0.1px rgba(128, 128, 128, 0.1) solid;
 }
 
 .menu ul li{
-    margin: 0 20px;
+    margin: 0 60px;
     list-style: none;
 }
 
@@ -41,7 +48,7 @@
     font-family: "Galindo", sans-serif;
     font-weight: 200;
     font-style: normal;
-    font-size: 12px;
+    font-size: .8rem;
 }
 .menu ul li a:hover{
     color: var(--color5);
@@ -135,12 +142,7 @@ body.light-mode .interruptor{
         display: flex;
     }
 
-    .menu .logo{
-        left: 50%;
-        transform: translate(-50%);
-    }.yupi{
-        left: 140px;
-    }
+   
 
     body.light-mode .menu ul li a{
         color: white;
@@ -164,7 +166,7 @@ body.light-mode .interruptor{
     .btn-menu{
         position: absolute;
         right: 5%;
-        top: 1%;
+        top: 5%;
         font-size: 32px;
         color: white;
         z-index: 9999;
