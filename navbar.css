@@ -154,12 +154,6 @@ body.light-mode .interruptor{
     .menu-mobile .logo{
         color: white;
     }
-
-    .menu .interruptor{
-        top: 10px;
-        left:20px;
-    }
-
     .btn-sair{
       display: none;
     }
@@ -176,24 +170,26 @@ body.light-mode .interruptor{
 
     }
 
+
     .menu-aberto ul{
         display: block;
-        margin-top:130px;
+        margin-top:5%;
     }   
 
     .menu-aberto ul li{
-        margin-top: 30px;
+        margin-top: 10%;
     }
     .menu-aberto ul li a{
         color: white;
-        margin-left: 20%;
+        font-size: .8em;
     }
 
 
-    
+
+
 body.mobile-aberto .menu-aberto{
-    display: block;
-    width: 50%;
+    display: flex;
+    width: 70%;
     height: 100vh;
     background-color: hsla(0, 0%, 0%, 0.900);
     position: absolute;
@@ -205,23 +201,10 @@ body.mobile-aberto .menu-aberto{
     display: block;
     position: absolute;
     color: white;
-    right: 40%;
+    right: 60%;
     top: 2%;
     z-index: 9999;
     font-size: 32px;
-}
-
-
-
-
-body.mobile-aberto .menu-aberto .login{
-    display: block;
-    top: 60px;
-    right: 40px;
-}body.mobile-aberto .menu-aberto .started{
-    display: block;
-    top: 60px;
-    right:100px;
 }
 
 
