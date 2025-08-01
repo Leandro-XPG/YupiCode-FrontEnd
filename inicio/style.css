@@ -15,7 +15,7 @@
 }
 
 body{
-    background-image: linear-gradient(to top,var(--color1),black);
+    background-color: var(--color4);
     background-repeat: no-repeat;
 }
 
