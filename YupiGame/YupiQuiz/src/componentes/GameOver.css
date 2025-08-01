@@ -1,0 +1,28 @@
+:root{
+    --color1:#4D01EB;
+    --color2:#532BAB;
+    --color3:#1D2634;
+    --color4:#04000E;
+    --color5:#EBD700;
+    --color6:#777935;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    overflow: hidden;
+}
+
+#gameOver h2{
+    margin-top: 2rem;
+}#gameOver p{
+    margin-top: 2rem;
+}#gameOver button{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}

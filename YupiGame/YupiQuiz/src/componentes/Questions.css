@@ -1,0 +1,29 @@
+:root{
+    --color1:#4D01EB;
+    --color2:#532BAB;
+    --color3:#1D2634;
+    --color4:#04000E;
+    --color5:#EBD700;
+    --color6:#777935;
+}
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#question{
+    box-shadow: 0 0 10px var(--color1);
+    border-radius: 1rem;
+    padding:30px;
+    margin-top: 5rem;
+}#question h2{
+    margin-top: 2rem;
+}#question p{
+    margin-top: 2rem;
+    color: var(--color1);
+}
