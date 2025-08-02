@@ -1,0 +1,31 @@
+:root{
+    --color1:#4D01EB;
+    --color2:#532BAB;
+    --color3:#1D2634;
+    --color4:#04000E;
+    --color5:#EBD700;
+    --color6:#777935;
+}
+
+.options{
+    background-color: black;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    opacity: 70%;
+    transition: .5s ease;
+}.options:hover{
+    opacity: 100%;
+    box-shadow: 0 5px 10px var(--color1);
+}
+#options-container .options p{
+    margin-top: 0;
+}
+
+
+.correct{
+    background-color: green;
+}.error{
+    background-color: red;
+}
