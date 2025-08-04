@@ -29,3 +29,10 @@
 }.error{
     background-color: red;
 }
+
+
+@media screen and (max-width:780px){
+    .options{
+        padding: .5rem;
+    }
+}

@@ -19,3 +19,14 @@
   color: var(--color5);
 }
 
+
+
+
+
+
+@media  screen and (max-width: 780px){
+  .App h1{
+    font-size: 2rem;
+  }
+}
+
