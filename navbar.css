@@ -9,15 +9,13 @@
 } 
 
 :root{
-    --color1:#4D01EB;
-    --color2:#532BAB;
-    --color3:#1D2634;
-    --color4:#04000E;
-    --color5:#EBD700;
-    --color6:#777935;
+    --color1:#0A0E4F;
+    --color2:#1D2634;
+    --color3:#04000E;
+    --color4:#F5D042;
+    --color5:#777935;
+
 }
-
-
 
 .menu .menu-mobile,.btn-menu{
     display: none;
@@ -51,7 +49,7 @@
     font-size: .8rem;
 }
 .menu ul li a:hover{
-    color: var(--color5);
+    color: var(--color4);
 }
 
 .menu ul li button{

@@ -7,16 +7,15 @@
     padding: 0;
 }
 :root{
-    --color1:#4D01EB;
-    --color2:#532BAB;
-    --color3:#1D2634;
-    --color4:#04000E;
-    --color5:#EBD700;
-    --color6:#777935;
+    --color1:#0A0E4F;
+    --color2:#1D2634;
+    --color3:#04000E;
+    --color4:#F5D042;
+    --color5:#777935;
 }
 
 body{
-    background-image:linear-gradient(to top, var(--color4),black);
+    background-image:linear-gradient(to top, var(--color3),black);
     background-repeat: no-repeat;
 }
 
@@ -134,7 +133,7 @@ h3{
     transition: .3s ease;
     cursor: pointer;
 }.card button:hover{
-    background-color: var(--color5);
+    background-color: var(--color4);
     color:black;
 }
 

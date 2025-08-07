@@ -61,8 +61,16 @@ const quizReducer = (state, action)=>{
                 score: state.score + correctAnswer,
                 answerSelected: option,
             };
-            
-            
+        case "RETURN_STATE":
+            const resetQuestion = [...questions].sort(()=> Math.random()-0.5);
+            return{
+                ...state,
+                gameStage : STAGES[0],
+                questions: resetQuestion,
+                currentQuestion:0,
+                score:0,
+                answerSelected:null
+            };
         default:
             return state;
     }

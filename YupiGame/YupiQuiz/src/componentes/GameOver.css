@@ -19,10 +19,36 @@ body{
 
 #gameOver h2{
     margin-top: 2rem;
-}#gameOver p{
+}#gameOver h3{
+    color: white;
+}
+#gameOver p{
     margin-top: 2rem;
 }#gameOver button{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+}#gameOver img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    max-width: 800px;
+}
+
+
+#gameOver .contador{
+    width: 20rem;
+    height: 5rem;
+    background-color:var(--color1);
+    box-shadow: 0 0 10px var(--color1);
+    border-radius: 2rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
