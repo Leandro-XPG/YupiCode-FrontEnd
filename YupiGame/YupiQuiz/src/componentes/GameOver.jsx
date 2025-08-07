@@ -70,6 +70,7 @@ const GameOver = () => {
         </div>
         
         <img src={theEnd} alt="gameOver" />
+        <button onClick={()=>{window.location.href="https://leandro-xpg.github.io/YupiCode-FrontEnd/"}}>Voltar</button>
     </div>
   )
 }
