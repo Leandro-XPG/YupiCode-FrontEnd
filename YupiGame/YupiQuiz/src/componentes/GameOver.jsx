@@ -10,18 +10,42 @@ import Questions from './Questions';
 
 const GameOver = () => {
    const [quizState, dispatch] = useContext(QuizContext);
-
-   //timer
-    let tempoInicial = 43200;
-
-    const contador = useRef(null);
+   const [TempoFormatado, setTempoFormatado] = useState("");
+   const contador = useRef(null);
+  
+   
 
     useEffect(()=>{
-      localStorage.setItem('gameStateLock', 'true');
+      const tempoDeEspera = 12 * 60 * 60 *1000;
+      const now = new Date().getTime();
 
-      let tempo = parseInt(localStorage.getItem("tempoRestante")) || tempoInicial;
+      let unlock = localStorage.getItem('quizUnlockTime');
 
-       const intervalo = setInterval(()=>{
+      if(!unlock){
+        const novoUnlock = now + tempoDeEspera;
+        localStorage.setItem('quizUnlockTime', novoUnlock.toString());
+        unlock = novoUnlock;
+      }
+
+
+
+
+      const intervalo = setInterval(()=>{
+        const agora = new Date().getTime();
+        const unlockTime = parseInt(localStorage.getItem('quizUnlockTime'));
+        const diff = unlockTime - agora;
+
+        if(diff <= 0){
+          clearInterval(intervalo);
+          localStorage.removeItem('quizUnlockTime');
+
+          dispatch({type: 'RETURN_STATE'});
+          return;
+        }
+
+
+
+      let tempo = Math.floor(diff/1000);
       let horas = Math.floor(tempo / 3600);
       let minutos = Math.floor((tempo % 3600) /60);
       let segundos = tempo % 60;
@@ -31,21 +55,10 @@ const GameOver = () => {
       String(minutos).padStart(2,'0') + ':' +
       String(segundos).padStart(2, '0');
 
-      if(contador.current){
-        contador.current.textContent = formatacao;
-      };
+    setTempoFormatado(formatacao);
       localStorage.setItem("tempoRestante", tempo);
-
-      if(tempo <= 0){
-        clearInterval(intervalo);
-        localStorage.removeItem("tempoRestante");
-        localStorage.removeItem("gameStateLock");
-
-        dispatch({type: 'RETURN_STATE'});
-    };
-
-      tempo--;
     },1000);
+
     return () => clearInterval(intervalo);
     }, [dispatch]);
 
@@ -66,7 +79,7 @@ const GameOver = () => {
         <h2>Fim de jogo!</h2>
         <p>Você acertou {quizState.score} de {quizState.questions.length} perguntas!</p>
         <div className="contador">
-          <h3 ref={contador}></h3>
+          <h3>{TempoFormatado}</h3>
         </div>
         
         <img src={theEnd} alt="gameOver" />

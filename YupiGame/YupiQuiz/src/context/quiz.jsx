@@ -71,6 +71,12 @@ const quizReducer = (state, action)=>{
                 score:0,
                 answerSelected:null
             };
+
+        case "SET_GAME_OVER":
+            return{
+                ...state,
+                gameStage: "End",
+            }
         default:
             return state;
     }
